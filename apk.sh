@@ -3,9 +3,10 @@ mkdir RC
 mkdir payload
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
 unzip ngrok-stable-linux-amd64.zip
+rm ngrok-stable-linux-amd64.zip
 sudo apt install gnome-terminal
 echo 'starting services'
-service postgresql start
+sudo service postgresql start
 read -p 'choose for ngrok to start : ' lport
 ./ngrok authtoken 3TKGHN2vCqEzwEoRTNRFp_214CuTzXj7XZjTJVTdtp9
 gnome-terminal -- ./ngrok tcp $lport
